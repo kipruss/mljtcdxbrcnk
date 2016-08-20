@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="backbonejs">
+    <head>
+        <meta charset="utf-8">
+        <title>Task2</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="app">
+            <section class="list-contaiter">
+                <table class="list"></table>
+            </section>
+            <aside class="form"></aside>
+        </section>
+        <script type="text/template" id="item">
+            <td class="cell cell--title"><%- title %></td>
+            <td class="cell"><a href="/#list/edit/<%- order %>" class="js-edit">edit</a></td>
+            <td class="cell"><a href="#" class="js-remove">remove</a></td>
+        </script>
+        <script type="text/template" id="add-item">
+            <button class="js-add">add item</button>
+        </script>
+        <script type="text/template" id="new-item">
+            <p>
+                <label>
+                    Add item<br>
+                    <input class="input js-new"><br>
+                </label>
+            </p>
+            <p>
+                <button class="js-save">save</button>
+                <button class="js-cancel">cancel</button>
+            </p>
+        </script>
+        <script type="text/template" id="edit-item">
+            <p>
+                <label>
+                    Edit item<br>
+                    <input class="input js-edit" value="<%- title %>">
+                </label>
+            </p>
+            <p>
+                <button class="js-save">save</button>
+                <button class="js-cancel">cancel</button>
+            </p>
+        </script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/underscore.js"></script>
+        <script src="js/vendor/backbone.js"></script>
+        <script src="js/vendor/backbone.localStorage.js"></script>
+        <script src="js/models/item.js"></script>
+        <script src="js/collections/items.js"></script>
+        <script src="js/views/item.js"></script>
+        <script src="js/views/add-item.js"></script>
+        <script src="js/views/new-item.js"></script>
+        <script src="js/views/edit-item.js"></script>
+        <script src="js/views/main.js"></script>
+        <script src="js/routers/router.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

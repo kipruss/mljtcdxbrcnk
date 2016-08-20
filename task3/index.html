@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+    <head>
+        <meta charset="utf-8">
+        <title>Task3</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="app">
+            <section class="table-contaiter">
+                <ul class="menu">
+                    <li class="menu__item menu__item--active" data-type="scatter">Table1</li>
+                    <li class="menu__item" data-type="column">Table2</li>
+                </ul>
+                <table class="table"></table>
+            </section>
+            <div id="scatter-chart" class="chart chart--scatter"></div>
+            <div id="column-chart" class="chart chart--column"></div>
+        </section>
+        <script type="text/template" id="table-header">
+            <th class="cell"><%- x %></th>
+            <th class="cell"><%- y %></th>
+        </script>
+        <script type="text/template" id="table-row">
+            <td class="cell"><%- x %></td>
+            <td class="cell"><%- y %></td>
+        </script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/underscore.js"></script>
+        <script src="js/vendor/backbone.js"></script>
+        <script src="js/views/table-header.js"></script>
+        <script src="js/views/table-row.js"></script>
+        <script src="js/views/main.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+    </body>
+</html>

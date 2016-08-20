@@ -1,0 +1,67 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.app {
+    overflow: hidden;
+}
+
+.table-contaiter {
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    background: #fff;
+    width: 100%;
+}
+
+.cell {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+}
+
+.chart {
+    float: right;
+    width: 50vw;
+    height: 80vh;
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    background: #f1f1f1;
+    cursor: pointer;
+    float: left;
+}
+
+.menu__item--active {
+    background: #ccc;
+}

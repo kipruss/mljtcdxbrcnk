@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/1.4em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    padding: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.app {
+    overflow: hidden;
+}
+
+.input {
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #999;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.list-contaiter {
+    width: 60%;
+    float: left;
+}
+
+.list {
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    background: #fff;
+    width: 100%;
+}
+
+.cell {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+}
+
+.cell--title {
+    width: 90%;
+}
+
+.form {
+    float: right;
+    width: 30%;
+    border: 1px solid #eee;
+    padding: 5px;
+}
