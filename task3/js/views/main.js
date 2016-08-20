@@ -102,9 +102,9 @@ var app = app || {};
             if (this.chartsInited) {
                 this.$el.find('.chart--' + this.type).removeClass('hidden');
                 if (this.type === 'scatter') {
-                    this.scatterChart.draw(google.visualization.arrayToDataTable(this.getData()), this.getOptions());
+                    this.scatterChart.draw(google.visualization.arrayToDataTable(data), this.getOptions());
                 } else if (this.type === 'column') {
-                    this.columnChart.draw(google.visualization.arrayToDataTable(this.getData()), this.getOptions());
+                    this.columnChart.draw(google.visualization.arrayToDataTable(data), this.getOptions());
                 }
             } else {
                 this.initCharts(data);
